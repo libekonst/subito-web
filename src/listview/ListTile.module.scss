@@ -1,0 +1,51 @@
+.container {
+  border: 1px solid black;
+  width: 15rem;
+  display: flex;
+}
+
+.hour {
+  background-color: pink;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding: 0.5rem;
+
+  &__start {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 10%;
+      bottom: 0;
+      right: 10%;
+      width: 80%;
+      height: 0.05rem;
+      background-color: #000;
+    }
+  }
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+
+  &__name {
+    width: 100%;
+    flex-grow: 2;
+    text-align: left;
+  }
+  &__vat {
+    width: 100%;
+    flex-grow: 1;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+}
