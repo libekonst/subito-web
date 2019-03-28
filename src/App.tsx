@@ -8,6 +8,12 @@ class App extends Component {
     return (
       <div className={style.App}>
         <ListTile />
+        <ListTile />
+        <ListTile />
+        <ListTile />
+        <ListTile />
+        <ListTile />
+        <ListTile />
       </div>
     );
   }

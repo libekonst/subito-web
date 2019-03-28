@@ -1,14 +1,11 @@
 import React, { FC } from 'react';
-import style from './ListTile.module.scss';
+import s from './ListTile.module.scss';
 export const ListTile: FC<any> = props => (
-  <div className={style.container}>
-    <div className={style.hour}>
-      <div className={style.hour__start}>9:00</div>
-      <div className={style.hour__finish}>17:00</div>
+  <section className={s.container}>
+    <div className={s.avatar} />
+    <div className={s.info}>
+      <p className={s.info__name}>Αλεξανδρος Λιγκας</p>
+      <p className={s.info__vat}>123123123</p>
     </div>
-    <div className={style.info}>
-      <div className={style.info__name}>Αλεξανδρος Λιγκας</div>
-      <div className={style.info__vat}>123123123</div>
-    </div>
-  </div>
+  </section>
 );
