@@ -7,13 +7,15 @@ class App extends Component {
   render() {
     return (
       <div className={style.App}>
-        <ListTile />
-        <ListTile />
-        <ListTile />
-        <ListTile />
-        <ListTile />
-        <ListTile />
-        <ListTile />
+        <ul>
+          <ListTile />
+          <ListTile />
+          <ListTile />
+          <ListTile />
+          <ListTile />
+          <ListTile />
+          <ListTile />
+        </ul>
       </div>
     );
   }
