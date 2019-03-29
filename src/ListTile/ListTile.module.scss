@@ -6,6 +6,16 @@ $containerPadding: 0.2rem;
   margin: auto;
   padding: $containerPadding;
   display: flex;
+  transition: background-color 0.3s linear;
+  &:hover {
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+  }
+  &:active {
+    transition: none ;
+
+    background-color: lightgray;
+  }
 }
 
 .avatar {
@@ -14,7 +24,6 @@ $containerPadding: 0.2rem;
   min-width: $containerHeight - $containerPadding;
   height: 100%;
   display: flex;
-  
 }
 
 .info {
