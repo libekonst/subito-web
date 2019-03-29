@@ -1,5 +1,30 @@
-
+$listTileHeight: 3rem;
+$listTilePading: 0.2rem;
 .App {
-  width: 100%;
-  height: 100%;
+}
+.ListView {
+  position: relative;
+  width: 30rem;
+  margin:auto;
+  border: solid 1px black;  
+}
+.employeesList {
+  margin: auto;
+  
+}
+.ListViewHeader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+  height: $listTileHeight;
+  padding: $listTilePading;
+  border: solid 1px black;
+}
+.header {
+  background-color: rgb(199, 184, 202);
+  height: 2.5rem;
+  text-align: center;
 }

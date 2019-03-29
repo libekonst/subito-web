@@ -1,20 +1,20 @@
 $containerHeight: 3rem;
+$containerPadding: 0.2rem;
 .container {
   // border: 1px solid black;
-  width: 100%;
   height: $containerHeight;
   margin: auto;
+  padding: $containerPadding;
   display: flex;
-  margin: 1rem;
 }
 
 .avatar {
   background-color: rgb(196, 219, 219);
-  border-radius: 10%;
-  min-width: $containerHeight;
+  border-radius: 50%;
+  min-width: $containerHeight - $containerPadding;
   height: 100%;
   display: flex;
-  padding: 0.4rem;
+  
 }
 
 .info {
@@ -30,7 +30,9 @@ $containerHeight: 3rem;
   }
   &__vat {
     width: 100%;
-    font-size: 0.7rem;
+    color: rgb(78, 78, 78);
+    font-size: 0.9rem;
+    font-weight: 100;
     text-align: left;
   }
   .button {
