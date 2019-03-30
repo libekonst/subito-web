@@ -1,33 +1,15 @@
 $listTileHeight: 3rem;
 $listTilePading: 0.2rem;
+$headerHeight: 2.8rem;
 .App {
   height: 100vh;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 200px 360px auto;
+  grid-column-gap: 10px;
+  grid-template-rows: 50px auto;
+  grid-template-areas:
+    'AppBar AppBar AppBar'
+    'SideBar  ListView .';
 }
-.header {
-  background-color: rgb(199, 184, 202);
-  height: 2.5rem;
-  text-align: center;
-}
-.ListView {
-  position: relative;
-  width: 30rem;
-  margin: auto;
-  border: solid 1px black;
-  height: 100%;
-  overflow: scroll;
-}
-.employeesList {
-  margin: auto;
-}
-.ListViewHeader {
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  background-color: #fff;
-  height: $listTileHeight;
-  padding: $listTilePading;
-  border: solid 1px black;
-}
+

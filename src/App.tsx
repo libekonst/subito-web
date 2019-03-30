@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import s from './App.module.scss';
-import { ListTile } from './ListTile/ListTile';
-import { IEmployee } from './interfaces/IEmployee';
+import { ListView } from './components/ListView/ListView';
+import { SideBar } from './components/SideBar/SideBar';
+import { AppBar } from './components/AppBar/AppBar';
 
 class App extends Component {
   state = {
@@ -128,19 +129,13 @@ class App extends Component {
       },
     ],
   };
-  renderListTiles = (employees: IEmployee[]) => {
-    return employees.map(emp => <ListTile employee={emp} />);
-  };
+
   render() {
     return (
       <div className={s.App}>
-        <header className={s.header}>Subito</header>
-        <div className={s.ListView}>
-          <div className= {s.ListViewHeader}></div>
-          <ul className={s.employeesList}>
-            {this.renderListTiles(this.state.employees)}
-          </ul>
-        </div>
+        <AppBar />
+        <SideBar />
+        <ListView employees={this.state.employees} />
       </div>
     );
   }
